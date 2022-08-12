@@ -1,0 +1,17 @@
+version: "2"
+services:
+  node-api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: "node:16"
+    container_name: node-api
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - type: bind
+        source: ./source
+        target: /usr/src/app/source
+    command: npm start
+    ports:
+      - "3000:8080"
