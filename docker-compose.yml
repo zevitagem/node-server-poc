@@ -13,5 +13,11 @@ services:
         source: ./source
         target: /usr/src/app/source
     command: npm start
+    networks:
+      - study-network
     ports:
       - "3000:8080"
+
+networks:
+  study-network:
+    external: true
