@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const {finder, appender} = require('./service.js');
-var data = require ('./data.json');
+var data = require('./data.json');
 
 // Constants
 const PORT = 8080;
@@ -23,20 +23,20 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.get('/users', (req, res) => {
-    return res.json(data.users);
+app.get('/humans', (req, res) => {
+    return res.json(data.humans);
 });
 
-app.post('/users', (req, res) => {
-    let user = req.body;
-    
-    appender(data, user, 'users');
+app.post('/humans', (req, res) => {
+    let human = req.body;
 
-    return res.json(user);
+    appender(data, human, 'humans');
+
+    return res.json(human);
 });
 
-app.get('/users/:id', (req, res) => {
-    return res.json(finder(data, 'users', req.params.id));
+app.get('/humans/:id', (req, res) => {
+    return res.json(finder(data, 'humans', req.params.id));
 });
 
 app.get('/roles/:id', (req, res) => {

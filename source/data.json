@@ -1,44 +1,38 @@
 {
-    "users": [
+    "humans": [
         {
             "id": 1,
-            "nome": "Ana Torre",
-            "ativo": true,
+            "name": "Ana Torre",
             "email": "a@a.com",
-            "role": 1
+            "active": true
         },
         {
             "id": 2,
-            "nome": "Gabriel Costa",
-            "ativo": true,
+            "name": "Gabriel Costa",
             "email": "g@g.com",
             "role": 1
         },
         {
             "id": 3,
-            "nome": "Flavia Lins",
-            "ativo": true,
+            "name": "Flavia Lins",
             "email": "f@f.com",
             "role": 1
         },
         {
             "id": 4,
-            "nome": "Carlos Marques",
-            "ativo": true,
-            "email": "c@c.com",
-            "role": 2
+            "name": "Carlos Marques",
+            "active": true,
+            "email": "c@c.com"
         },
         {
             "id": 5,
-            "nome": "Silvia Souza",
-            "ativo": true,
+            "name": "Silvia Souza",
             "email": "s@s.com",
             "role": 2
         },
         {
             "id": 6,
-            "nome": "Marci`a Silva",
-            "ativo": true,
+            "name": "Marci`a Silva",
             "email": "m@m.com",
             "role": 2
         }
@@ -46,15 +40,23 @@
     "roles": [
         {
             "id": 1,
-            "type": "ESTUDANTE"
+            "type": "JUNIOR"
         },
         {
             "id": 2,
-            "type": "DOCENTE"
+            "type": "PLENO"
         },
         {
             "id": 3,
-            "type": "COORDENACAO"
+            "type": "SENIOR"
+        },
+        {
+            "id": 4,
+            "type": "STAFF"
+        },
+        {
+            "id": 5,
+            "type": "PRINCIPAL"
         }
     ]
 }

@@ -1,4 +1,4 @@
-const finder = function(data, context, findKey, compareKey) {
+const finder = function (data, context, findKey, compareKey) {
     var result = null;
 
     if (!compareKey) {
@@ -15,18 +15,18 @@ const finder = function(data, context, findKey, compareKey) {
     }
 
     return result;
-}
+};
 
 const appender = function (storage, data, context) {
     if (
-        storage[context] && 
+        storage[context] &&
         Array.isArray(storage[context])
     ) {
         //storage[context].push(data)
     }
-}
+};
 
 module.exports = {
     finder,
     appender
-}
+};
