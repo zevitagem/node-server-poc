@@ -22,7 +22,7 @@ const appender = function (storage, data, context) {
         storage[context] &&
         Array.isArray(storage[context])
     ) {
-        //storage[context].push(data)
+        storage[context].push(data);
     }
 };
 
